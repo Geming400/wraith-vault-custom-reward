@@ -38,6 +38,9 @@ Or use it the interactive version of mitmproxy:
 mitmproxy --mode transparent -s main.py
 ```
 
+> [!TIP]
+> Every time you change the reward, you won't need to execute the `mitmproxy` command again. `mitmproxy` updates it's modules every a new **saved change** has been made
+
 ## Changing the reward
 
 You can easily change the reward's content. At the top of the file you can see:
