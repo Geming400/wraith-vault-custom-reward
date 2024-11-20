@@ -1,7 +1,7 @@
 > [!NOTE]  
 > This script lacks a lot of customisation.
 
-> [!WARNING]
+> [!IMPORTANT]
 > If you do not want to keep the obtained custom rewards, make sure to follow whats in [backup.md](./backup.md)
 
 <br>
