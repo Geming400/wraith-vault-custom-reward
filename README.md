@@ -29,13 +29,13 @@ Run `start.bat` (You will need to run it as an administrator *(for Windows at le
 
 [comment]: <> (Using `python` syntaxing because uhhh colors)
 ```cmd
-mitmdump --showhost --mode transparent -s main.py
+mitmdump --mode transparent -s main.py
 ```
 
 Or use it the interactive version of mitmproxy:
 
 ```cmd
-mitmproxy --showhost --mode transparent -s main.py
+mitmproxy --mode transparent -s main.py
 ```
 
 ## Changing the reward
