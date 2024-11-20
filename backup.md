@@ -1,6 +1,6 @@
 # Backups
 
-Doing a backup of your save file can be important here, as for example, if you give yourself golden keys, you wouldn't want it to be forever in your save file *(right ?)***
+Doing a backup of your save file can be important here, as for example, if you give yourself golden keys, you wouldn't want it to be forever in your save file *(right ?)*
 
 In geometry dash, there are 2 saves files:
 - `CCGameManager.dat` *(your main save file, contains your stats, icons, etc...)*
