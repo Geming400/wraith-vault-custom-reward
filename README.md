@@ -1,6 +1,9 @@
 > [!NOTE]  
 > This script lacks a lot of customisation.
 
+> [!WARNING]
+> If you do not want to keep the obtained custom rewards, make sure to follow whats in [backup.md](./backup.md)
+
 <br>
 
 # Wraith vault custom reward
@@ -40,6 +43,7 @@ mitmproxy --mode transparent -s main.py
 
 > [!TIP]
 > Every time you change the reward, you won't need to execute the `mitmproxy` command again. `mitmproxy` updates it's modules every a new **saved change** has been made.
+> *(this script is a `mitmproxy module`)*
 
 ## Changing the reward
 
