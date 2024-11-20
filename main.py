@@ -107,9 +107,9 @@ class GjRewards:
             logging.info("random chars = " + random_chars)
             
             
-            REWARD_ID = 107
-            ITEM_ID = Items.Keys.golden_key
-            NUM_OF_ITEMS = 639425
+            REWARD_ID = None
+            ITEM_ID = None
+            NUM_OF_ITEMS = None
             
             #REWARD_ID = decode_secret_reward(flow.response.text).split(":")[2]
             #ITEM_ID = decode_secret_reward(flow.response.text).split(":")[4].split(",")[0]
@@ -181,15 +181,3 @@ class GjRewards:
 addons = [
     GjRewards()
 ]
-
-if __name__ == "__main__":
-    REWARD_ID = 100
-    
-    ITEM_ID = 1
-    NUM_OF_ITEMS = 10
-    
-    CHK = f"{''.join(random.choice('1234567890qwertyuiopaqsdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM') for i in range(5))}{base64.b64encode(cyclic_xor(str(random.randint(10000, 1000000)), '59182').encode()).decode()}"
-    secret_reward = f"{gen_random_chars()}:{CHK}:{REWARD_ID}:1:{ITEM_ID},{NUM_OF_ITEMS}"
-    encrypted_reward = encrypt_secret_reward(secret_reward)
-    print(secret_reward)
-    print(encrypted_reward)
