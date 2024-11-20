@@ -61,7 +61,7 @@ NUM_OF_ITEMS = 3
 But if we instead **want 1 golden key**, we can do it like so:
 
 ```py
-REWARD_ID = 1001 # This ID is just an example, it's set to 1000 so we are sure it won't ever conflict with the 'official' rewards
+REWARD_ID = 1001 # This ID is just an example, it's set to 1001 so we are sure it won't ever conflict with the 'official' rewards
 ITEM_ID = Items.Keys.golden_key
 NUM_OF_ITEMS = 1
 ```
