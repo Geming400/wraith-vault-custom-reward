@@ -6,9 +6,32 @@ import hashlib
 
 logging.basicConfig(level=logging.DEBUG)
 
+class Items:  
+    class Shards:
+        fire = 1
+        ice = 2
+        poison = 3
+        shadow = 4
+        lava = 5
+        earth = 10
+        blood = 11
+        metal = 12
+        light = 13
+        soul = 14
+    
+    class Obtainables:
+        orb = 7
+        diamond = 8
+    
+    class Keys:
+        demon_key = 6
+        golden_key = 15
+
+# -----------
 REWARD_ID = None # You will need to set a unique ID every time
 ITEM_ID = None
 NUM_OF_ITEMS = None
+# -----------
 
 def gen_random_chars():
     return ''.join(random.choice('1234567890qwertyuiopaqsdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM') for i in range(5))
@@ -70,26 +93,6 @@ def encrypt_secret_reward(reward_string: str, add_hash = True, random_chars = ge
     else:
         return appended_front_chars + encoded_string
 
-class Items:  
-    class Shards:
-        fire = 1
-        ice = 2
-        poison = 3
-        shadow = 4
-        lava = 5
-        earth = 10
-        blood = 11
-        metal = 12
-        light = 13
-        soul = 14
-    
-    class Obtainables:
-        orb = 7
-        diamond = 8
-    
-    class Keys:
-        demon_key = 6
-        golden_key = 15
 
 class GjRewards:
     def __init__(self) -> None:
