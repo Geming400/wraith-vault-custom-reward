@@ -6,6 +6,10 @@ import hashlib
 
 logging.basicConfig(level=logging.DEBUG)
 
+REWARD_ID = None # You will need to set a unique ID every time
+ITEM_ID = None
+NUM_OF_ITEMS = None
+
 def gen_random_chars():
     return ''.join(random.choice('1234567890qwertyuiopaqsdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM') for i in range(5))
 
@@ -105,11 +109,6 @@ class GjRewards:
             logging.info("original_random_string = " + appended_front_chars)
             random_chars = decode_secret_reward(flow.response.text).split(":")[0]
             logging.info("random chars = " + random_chars)
-            
-            
-            REWARD_ID = None
-            ITEM_ID = None
-            NUM_OF_ITEMS = None
             
             #REWARD_ID = decode_secret_reward(flow.response.text).split(":")[2]
             #ITEM_ID = decode_secret_reward(flow.response.text).split(":")[4].split(",")[0]
