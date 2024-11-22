@@ -18,7 +18,7 @@ This dosen't require any other dependencies ! (todo: test this statement)
 
 # How to use
 
-> [!NOTE]  
+> [!NOTE]
 > Do note that for **EVERY** tried code tried in the wraith vault, this script will **ALWAYS** modify the request's response.
 
 ## Running the script
@@ -41,7 +41,7 @@ Or use it the interactive version of mitmproxy :
 mitmproxy --mode transparent -s main.py
 ```
 
-[!NOTE]  
+> [!NOTE]  
 > When running this, every requests made using **https** won't go through. For example if you are running this script but want to access discord in the meantime, you will need to close the `mitmproxy` instance (aka CMD (rip Linux users rn))
 
 > [!TIP]
