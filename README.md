@@ -1,6 +1,9 @@
 > [!NOTE]  
 > This script lacks a lot of customisation.
 
+ [!NOTE]  
+> When running this, every requests made using **https** won't go through. For example if you are running this script but want to access discord in the meantime, you will need to close the `mitmproxy` instance (aka CMD (rip Linux users rn))
+
 > [!IMPORTANT]
 > If you do not want to keep the obtained custom rewards, make sure to follow whats in [backup.md](./backup.md)
 
