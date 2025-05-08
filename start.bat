@@ -1,1 +1,1 @@
-mitmdump --mode transparent -s main.py
+mitmdump --mode local -s main.py
