@@ -26,23 +26,23 @@ This dosen't require any other dependencies ! (todo: test this statement)
 Run `start.bat` (You will need to run it as an administrator *(for Windows at least)*)
 
 **Or**:
-- Open **CMD**
+- Open **CMD** as **administrator**
 - Go to the directory where the python script is located (using `cd`)
 - Run:
 
 [comment]: <> (Using `python` syntaxing because uhhh colors)
 ```cmd
-mitmdump --mode transparent -s main.py
+mitmdump --mode local -s main.py
 ```
 
 Or use it the interactive version of mitmproxy :
 
 ```cmd
-mitmproxy --mode transparent -s main.py
+mitmproxy --mode local -s main.py
 ```
 
 > [!NOTE]  
-> When running this, every requests made using **https** won't go through. For example if you are running this script but want to access discord in the meantime, you will need to close the `mitmproxy` instance (aka CMD (rip Linux users rn))
+> When running this, every requests made using **https** won't go through. For example if you are running this script but want to access discord in the meantime, you will need to close the `mitmproxy` instance)
 
 > [!TIP]
 > Every time you change the reward, you won't need to execute the `mitmproxy` command again. `mitmproxy` updates it's modules every a new **saved change** has been made.
@@ -57,6 +57,8 @@ REWARD_ID = None # You will need to set a unique ID every time
 ITEM_ID = None
 NUM_OF_ITEMS = None
 ```
+
+For it to work each time, you will need to change the `REWARD_ID` var. Try to keep it above a huge number so that it won't **conflict with robtop's rewards**
 
 ### Examples:
 
