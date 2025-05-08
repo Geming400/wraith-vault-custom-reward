@@ -12,9 +12,8 @@ This script will allow you to modify the request sent to the gd servers (when us
 
 # Installation
 
-You'll need to download a tool known as [mitmproxy](https://mitmproxy.org/) and [python](https://www.python.org/) (at least version 3).
-
-This dosen't require any other dependencies ! (todo: test this statement)
+You'll need to download a tool known as [mitmproxy](https://mitmproxy.org/).
+This dosen't require any other dependencies !
 
 # How to use
 
